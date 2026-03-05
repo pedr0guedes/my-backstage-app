@@ -1,0 +1,5 @@
+{
+  "terminal.integrated.env.osx": {
+    "PATH": "/Users/pedroguedes/.nvm/versions/node/v20.20.0/bin:${env:PATH}"
+  }
+}
