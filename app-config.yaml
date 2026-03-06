@@ -63,10 +63,15 @@ techdocs:
     type: 'local' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
 
 auth:
-  # see https://backstage.io/docs/auth/ to learn about auth providers
   providers:
-    # See https://backstage.io/docs/auth/guest/provider
-    guest: {}
+    github:
+      development:
+        clientId: Ov23li2fTO27GSrqOvKq
+        clientSecret: ca3afde66c9ee16a24e9e224340d46e0d1fdb4db
+
+        signIn:
+          resolvers:
+            - resolver: usernameMatchingUserEntityName
 
 scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
@@ -110,4 +115,4 @@ kubernetes:
 # see https://backstage.io/docs/permissions/getting-started for more on the permission framework
 permission:
   # setting this to `false` will disable permissions
-  enabled: false
+  enabled: true

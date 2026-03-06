@@ -3,8 +3,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: guest
+  name: pedr0guedes
 spec:
+  mprofile:
+    displayName: Pedro Guedes
+    email: pedrohgto16@gmail.com
   memberOf: [guests]
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
